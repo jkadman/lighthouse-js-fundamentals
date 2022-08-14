@@ -1,15 +1,8 @@
-
-const amounts = [61.00, 52.25, 112.99, 5.00];
-/*
-let total = 0;
-for (let i = 0; i < amounts.length; i++) {
-  total += amounts[i];
+function findAverage(x, y) {
+  var answer = (x + y) / 2;
+  return answer;
 }
-console.log('Order total is: ', total);
-*/
 
-let total = 0;
-for (let amount of amounts) {
-  total += amount;
-}
-console.log('Order total is: ', total);
+var avg = findAverage(5, 9);
+
+console.log(avg);
