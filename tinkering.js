@@ -1,11 +1,11 @@
-function isPrime(integer) {
-  for (let x = 2; x < integer; x++) {
-    if (integer % x === 0) {
-      console.log(integer + ' is divisble by ' + x);
-      //return false;
+let sound = '';
+
+function laugh(num) {
+  for (let x = 0; x <= num; x++) {
+    sound = sound + 'ha';
     }
-  }
-  //return true;
+  sound = sound + '!';
+    return sound;
 }
 
-console.log(isPrime(150));
+console.log(laugh(9));
