@@ -10,7 +10,7 @@ const stations = [
 
 
 //let goodStations = [];
-//let badStations = [];
+
 
 
 /*function chooseStations (stations) {
@@ -29,15 +29,18 @@ console.log(chooseStations(stations));
 
 
 function chooseStations (stations) {
+  let goodStations = [];
+  let badStations = [];
   for (const station of stations) {
     const capacity = station[1];
     const type = station[2];
     if ((capacity >= 20) && (type === 'School' || type === 'Community Centre')) {
-      console.log(station[0])
+      goodStations.push(station[0])
     } else {
-      console.log(false);
+      badStations.push(station[0]);
     }
   }
+  return goodStations; 
 }
 
 console.log(chooseStations(stations));
