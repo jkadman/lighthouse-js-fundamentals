@@ -1,9 +1,15 @@
+/*const stations = [
+  ['Chef Rons', 30, 'restaurant'],
+  ['Britannia', 40, 'community centre'],
+  ['Lord Bing', 100, 'school'],
+  ['Best Falafel', 10, 'restaurant'],
+  ['Vantech', 100, 'school'],
+]; */
+
 const stations = [
-  ['Chef Rons', 30, 'Restaurant'],
-  ['Britannia', 40, 'Community Centre'],
-  ['Lord Bing', 100, 'School'],
-  ['Best Falafel', 10, 'Restaurant'],
-  ['Vantech', 100, 'School'],
+  ['Big Bear Donair', 10, 'restaurant'],
+  ['Bright Lights Elementary', 50, 'school'],
+  ['Moose Mountain Community Centre', 45, 'community centre'],
 ];
 
 
@@ -30,15 +36,15 @@ console.log(chooseStations(stations));
 
 function chooseStations (stations) {
   let goodStations = [];
-  let badStations = [];
+  //let badStations = [];
   for (const station of stations) {
     const capacity = station[1];
     const type = station[2];
-    if ((capacity >= 20) && (type === 'School' || type === 'Community Centre')) {
+    if ((capacity >= 20) && (type === 'school' || type === 'community centre')) {
       goodStations.push(station[0])
-    } else {
+    } /* else {
       badStations.push(station[0]);
-    }
+    } */
   }
   return goodStations; 
 }
